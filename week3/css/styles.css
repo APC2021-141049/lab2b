@@ -1,0 +1,25 @@
+body {
+	background-color: pink;
+}
+p{
+	color: blue;
+	text-align: center;
+}
+h1{
+	text-align: center;
+}
+img{
+	opacity: 1.0;
+}
+img:hover{
+	opacity: 0.5;
+}
+#bchi1, #bchi3{
+	color:yellow;
+}
+#bchi2{
+	color:blue;
+}
+.background{
+	background-color: #ffe2ff;
+}
