@@ -1,0 +1,45 @@
+body {
+	margin: 0px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #160328;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar a:hover {
+	-moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .2s ease-in;
+	color: #3e006e;
+	background-color: #deb3ff;
+}
+
+.navbar-list {
+	float: right;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	margin-top: 5px;
+	margin-right: 5px;
+	padding: 16px 24px;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;;
+}
+.navbar-main-list {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;;
+	font-size: 27px;
+}
+
+.about {
+	margin-top: 30px;
+}
