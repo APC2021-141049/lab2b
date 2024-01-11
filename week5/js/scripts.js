@@ -1,8 +1,8 @@
 function showTwitchModal(titleHtml, contentHtml, buttons) {
-	const twitch_modal = document.createElement("div");
+	const twitchmodal = document.createElement("div");
 	
-	twitch_modal.classList.add("twitch_modal");
-	twitch_modal.innerHTML = `
+	twitchmodal.classList.add("twitch_modal");
+	twitchmodal.innerHTML = `
 		<div class="twitch_modal">
 			<div class="twitch_modal__inner">
 				<div class="twitch_modal__top">
@@ -25,26 +25,26 @@ function showTwitchModal(titleHtml, contentHtml, buttons) {
 		element.textContent = button.label;
 		element.addEventListener("click", () => {
 			if (button.triggerClose) {
-				document.body.removeChild(twitch_modal);
+				document.body.removeChild(twitchmodal);
 			}
 			
-			button.onClick(twitch_modal);
+			button.onClick(twitchmodal);
 		});
 		
-		twitch_modal.querySelector(".twitch_modal__bottom").appendChild(element);
+		twitchmodal.querySelector(".twitch_modal__bottom").appendChild(element);
 	}
 	
-	twitch_modal.querySelector(".twitch_modal__close").addEventListener("click", () => {
-		document.body.removeChild(twitch_modal);
+	twitchmodal.querySelector(".twitch_modal__close").addEventListener("click", () => {
+		document.body.removeChild(twitchmodal);
 	});
 	
-	document.body.appendChild(twitch_modal)
+	document.body.appendChild(twitchmodal)
 }
 
 showTwitchModal("Twitch Gallery", "<p>I am the content of this modal</p>", [
 	{
 		label: "Return to Page",
-		onClick: twitch_modal => {
+		onClick: twitchmodal => {
 			console.log("Returning to page.");
 		},
 		triggerClose: true
