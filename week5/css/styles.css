@@ -14,7 +14,7 @@ a {
 }
 
 body {
-	background-color: #d2a6ff;
+	background-color: #b998f5;
 	font-family: 'Inter', sans-serif;
 	height: 3000px;
 }
@@ -134,6 +134,12 @@ body {
 	float: left;
 	display: flex;
 	z-index: 9998;
+	transition: all 0.4s;
+}
+.masthead_profile:hover {
+	opacity: 0.8;
+	width: 410px;
+	cursor: default;
 }
 
 .box {
@@ -145,7 +151,7 @@ body {
     display: block;
     width: 65%;
     height: 2px;
-    position: absolute;
+	position: absolute;
     top: 100%;
     left: 30%;
 	margin-top: 275px;
@@ -158,7 +164,14 @@ body {
 	text-align: center;
 	font-weight: 600;
 	font-size: 80px;
+	color: #000000;
+	transition: all 0.3s;
 }
+.gallery_header:hover {
+	cursor: default;
+	color: #4e009c;
+}
+
 .gallery_container {
 	width: 100%;
 	text-align: center;
@@ -202,7 +215,7 @@ body {
 
 .twitch_profile {
 	float: left;
-	width: 400px;
+	width: 375px;
 	margin-left: 110px;
 	opacity: 1;
 	transition: all 0.4s;
@@ -210,7 +223,7 @@ body {
 
 .twitch_profile:hover {
 	opacity: 0.7;
-	width: 450px;
+	width: 425px;
 	cursor: pointer;
 }
 
@@ -243,7 +256,7 @@ body {
 }
 
 .galleryimg_container {
-	background-color: #b68cff;
+	background-color: #a67af5;
 	height: 650px;
 	margin-top: -150px;
 	padding-top: 150px;
@@ -254,15 +267,105 @@ body {
 	text-align: center;
 	font-weight: 600;
 	font-size: 80px;
+	color: #000000;
+	transition: all 0.3s;
 }
+
+.skills_header:hover {
+	cursor: default;
+	color: #4e009c;
+}
+
 .skills_container {
 	width: 100%;
 	text-align: center;
 }
 
 .skillstxt_container {
-	background-color: #cdb0ff;
+	background-color: #925bf5;
 	height: 1000px;
 	margin-top: -150px;
 	padding-top: 150px;
+}
+
+
+.twitch_modal {
+	--gap: 15px;
+	
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width; 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: var(--gap);
+	background: rgba(0, 0, 0, 0.5);
+	font-family: 'Lexend', sans-serif;
+	z-index: 999999;
+}
+
+.twitch_modal__inner {
+	background: #ffffff;
+	width: 100%;
+	max-width: 800px;
+	overflow: hidden;
+	border-radius: 4px;
+	
+}
+
+.twitch_modal__top {
+	display: flex;
+	align-items: center;
+	background: #b998f5;
+}
+
+.twitch_modal__title {
+	flex-grow: 1;
+	padding: 0 var(--gap);
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.twitch_modal__close {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding: var(--gap);
+	background: none;
+	border: none;
+	outline: none;
+}
+
+.twitch_modal__content {
+	padding: 0 var(--gap);
+	line-height: 1.5;
+}
+
+.twitch_modal__bottom {
+	text-align: right;
+	padding: 0 var(--gap) var(--gap) var(--gap);
+}
+
+.twitch_modal__button {
+	display: inline-block;
+	padding: 6px 12px;
+	background: #4e009c;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 18px;
+	font-family: 'Lexend', sans-serif;
+	transition: all 0.1s;
+}
+
+.twitch_modal__button:hover {
+	background: #b998f5;
+	color: #000000;
 }
