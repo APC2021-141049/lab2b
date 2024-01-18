@@ -50,3 +50,5 @@ showTwitchModal("Twitch Gallery", "<p>I am the content of this modal</p>", [
 		triggerClose: true
 	}
 ]);
+
+document.getElementById("twitch_profile").addEventListener("click", showTwitchModal);
